@@ -1,0 +1,74 @@
+.outer-container {
+    height: 100vh;
+    background-image: url(../../../assets/images/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    margin-top: 50px;
+    padding: 10px 100px 10px 100px;
+    border-radius: 4px;
+    border: none;
+    background-color: #0045ad;
+    color: white;
+    font-size: 1.5em;
+}
+
+.stack-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+}
+
+.stack {
+    position: absolute;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+
+.letter {
+    z-index: 2;
+    transform-origin: center center;
+    transform: rotate(5deg);
+}
+.certificate {
+    z-index: 3;
+    transform-origin: center center;
+    transform: rotate(-5deg);
+}
+.grass {
+    z-index: 4;
+    transform-origin: center center;
+    transform: rotate(-2deg);
+}
+.card {
+    z-index: 5;
+    transform-origin: center center;
+    transform: rotate(10deg);
+}
+
+.transform-letter {
+    transform: rotate(15deg) scale(1.2) translate(250px, -10px);
+}
+
+.transform-certificate {
+    transform: rotate(5deg) scale(1.2);
+}
+
+.transform-grass {
+    transform: rotate(-30deg) scale(1.2) translate(-200px, -70px);
+}
+
+.transform-card {
+    transform: rotate(10deg) scale(1.2) translate(10px, 150px);
+}
