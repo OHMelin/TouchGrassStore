@@ -1,6 +1,8 @@
 body {
     margin: 0px;
-    background-color: lightskyblue;
+    //background-color: rgb(100, 196, 255);
+    background-image: url('../src/assets/images/repeat.jpg');
+    background-size: cover;
     font-family: 'Playpen Sans', cursive;
 }
 .outer-container {    
@@ -13,3 +15,5 @@ body {
     max-width: 920px;
     margin: auto;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

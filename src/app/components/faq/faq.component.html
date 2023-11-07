@@ -2,7 +2,16 @@
     <img id="top-dirt" src="../../../assets/images/dirt.png" alt="">
     <div class="inner-container">
         <h2>FAQ</h2>
-        <p>faq works!</p>
+        <mat-accordion>
+          <mat-expansion-panel *ngFor="let faq of faqs">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                {{faq.question}}
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>{{faq.answer}}</p>
+          </mat-expansion-panel>
+        </mat-accordion>
     </div>
     <img id="bottom-grass" src="../../../assets/images/grass.png" alt="">
 </div>

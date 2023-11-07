@@ -12,3 +12,16 @@ h2 {
     bottom: 0px;
     width: 100%;
 }
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}

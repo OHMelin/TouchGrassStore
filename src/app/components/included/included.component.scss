@@ -12,3 +12,18 @@ h2 {
     bottom: 0px;
     width: 100%;
 }
+
+.card-container {
+    display: flex;
+    gap: 1rem;
+}
+mat-card {
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
