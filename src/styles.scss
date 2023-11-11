@@ -15,5 +15,19 @@ body {
     max-width: 920px;
     margin: auto;
 }
+
+.cloud {
+    font-family: Cloud !important;
+    color: white;
+    text-shadow: 0 0 10px #00000075;
+    font-size: 50px !important;
+    padding-bottom: 50px;
+}
+
+@font-face {
+    font-family: Cloud;
+    src: url(cloud.otf) format("opentype");
+}
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; }
