@@ -20,6 +20,7 @@ a {
     position: absolute;
     background-color: #45a545 !important;
     color: white !important;
+    min-width: 150px;
 }
 
 .stack-container {
@@ -59,8 +60,9 @@ a {
     transform-origin: center center;
     rotate: 90deg;
     animation-name: certificate;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
+    transform: translate(-50px);
 }
 .grass {
     box-shadow: none;
@@ -68,20 +70,25 @@ a {
     transform-origin: center center;
     rotate: 90deg;
     animation-name: grass;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
+    transform: translate(-50px) rotate(90deg);
 }
 .card {
     z-index: 4;
     transform-origin: center center;
     animation-name: card;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
+    transform: translate(0, -50px);
 }
 
 @keyframes certificate {
+    25% {
+        transform: translate(-50px);
+    }
     70% {
-        transform: translate(-500px);
+        transform: translate(-500px) rotate(-0deg);
     }
     100% {
         transform: translate(-450px) rotate(-90deg);
@@ -90,15 +97,21 @@ a {
 }
 
 @keyframes grass {
+    25% {
+        transform: translate(-50px) rotate(90deg);
+    }
     70% {
-        transform: translate(-525px);
+        transform: translate(-525px) rotate(90deg);
     }
     100% {
-        transform: translate(-400px, 200px) rotate(75deg);
+        transform: translate(-400px, 200px) rotate(165deg);
     }
 }
 
 @keyframes card {
+    25% {
+        transform: translate(0, -50px);
+    }
     70% {
         transform: translate(0, -600px);
     }

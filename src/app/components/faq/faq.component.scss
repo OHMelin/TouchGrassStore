@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 .outer-container {
     flex-direction: column;
 }
@@ -8,10 +10,7 @@ mat-icon {
     margin-right: 10px;
 }
 mat-expansion-panel {
-    background-color: rgb(50, 30, 30);
-    background-image: url('../../../assets/images/dirt_blurred.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: $custom-primary;
     color: white !important;
     .mat-expansion-panel-header-title {
         color: white;
@@ -29,7 +28,5 @@ mat-expansion-panel {
 }
 
 .mat-expansion-panel {
-    border: 2px solid white; /* Add border to the entire panel */
-    margin-bottom: -2px; /* Compensate for the bottom border to avoid double border */
     text-shadow: 0 0 5px black;
   }

@@ -1,3 +1,6 @@
+$custom-primary: #6F4E3799;
+$custom-green: #45a545;
+
 body {
     background-image: url('../src/assets/images/dirt_dark.jpg');
     background-size: auto;
@@ -43,6 +46,17 @@ body {
 html, body { height: 100%; }
 body { margin: 0; }
 
+
+.mat-expansion-panel-body {
+    padding: 16px 24px 16px !important;
+    p {
+        margin-bottom: 0;
+    }
+}
 .mat-expansion-indicator::after {
     color: white;
-  }
+}
+.mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
+    
+    background-color: $custom-primary;
+}
