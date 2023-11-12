@@ -32,6 +32,8 @@ a {
     left: 0;
     right: 0;
     z-index: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 .stack {
@@ -45,6 +47,10 @@ a {
     background-size: cover;
     width: 250px;
     height: 360px;
+    @media screen and (max-width: 450px) {
+        width: 200px;
+        height: 288px;
+    }
 }
 .letter {
     box-shadow: none;
@@ -54,6 +60,10 @@ a {
     background-size: cover;
     width: 250px;
     height: 360px;
+    @media screen and (max-width: 450px) {
+        width: 200px;
+        height: 288px;
+    }
 }
 .certificate {
     z-index: 2;
@@ -63,6 +73,11 @@ a {
     animation-duration: 2s;
     animation-fill-mode: forwards;
     transform: translate(-50px);
+    width: 330px;
+    @media screen and (max-width: 450px) {
+        width: 267px;
+        animation-name: certificate_sm;
+    }
 }
 .grass {
     box-shadow: none;
@@ -73,6 +88,11 @@ a {
     animation-duration: 2s;
     animation-fill-mode: forwards;
     transform: translate(-50px) rotate(180deg);
+    width: 195px;
+    @media screen and (max-width: 450px) {
+        width: 156px;
+        animation-name: grass_sm;
+    }
 }
 .card {
     z-index: 4;
@@ -81,6 +101,11 @@ a {
     animation-duration: 2s;
     animation-fill-mode: forwards;
     transform: translate(0, -50px);
+    width: 70px;
+    @media screen and (max-width: 450px) {
+        width: 56px;
+        animation-name: card_sm;
+    }
 }
 
 @keyframes certificate {
@@ -92,6 +117,18 @@ a {
     }
     100% {
         transform: translate(-450px) rotate(-90deg);
+        box-shadow: 0 0 50px #00000025;
+    }
+}
+@keyframes certificate_sm {
+    25% {
+        transform: translate(-50px);
+    }
+    70% {
+        transform: translate(-400px) rotate(-0deg);
+    }
+    100% {
+        transform: translate(-350px) rotate(-90deg);
         box-shadow: 0 0 50px #00000025;
     }
 }
@@ -107,6 +144,17 @@ a {
         transform: translate(-400px, 200px) rotate(165deg);
     }
 }
+@keyframes grass_sm {
+    25% {
+        transform: translate(-50px) rotate(180deg);
+    }
+    70% {
+        transform: translate(-425px) rotate(180deg);
+    }
+    100% {
+        transform: translate(-300px, 150px) rotate(165deg);
+    }
+}
 
 @keyframes card {
     25% {
@@ -116,7 +164,19 @@ a {
         transform: translate(0, -600px);
     }
     100% {
-        transform: translate(225px, -500px) rotate(10deg);
+        transform: translate(210px, -500px) rotate(10deg);
+        box-shadow: 0 0 50px #00000025;
+    }
+}
+@keyframes card_sm {
+    25% {
+        transform: translate(0, -50px);
+    }
+    70% {
+        transform: translate(0, -475px);
+    }
+    100% {
+        transform: translate(170px, -400px) rotate(10deg);
         box-shadow: 0 0 50px #00000025;
     }
 }

@@ -3,32 +3,37 @@
 .outer-container {
     flex-direction: column;
 }
-.card-container {
-    display: flex;
-    gap: 1rem;
-    @media screen and (max-width: 720px) {
-        flex-wrap: wrap;
-    }
-}
-mat-card {
-    width: 100%;
-
-    img {
-        width: 100%;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-    }
-}
 .button-container {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
     justify-content: center;
 }
-
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 mat-card {
+    flex: 1;
+    width: 100%;
+    min-width: 200px;
+
+    @media screen and (max-width: 920px) {
+        min-width: 300px;
+    }
+
+    @media screen and (max-width: 500px) {
+        min-width: 200px;
+    }
+
     background-color: $custom-primary;
     color: white;
+    img {
+        width: 100%;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
     mat-card-content {
         padding-top: 16px;
     }
