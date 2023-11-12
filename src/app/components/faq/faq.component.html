@@ -1,11 +1,12 @@
 <div class="outer-container">
-    <img id="top-dirt" src="../../../assets/images/dirt.png" alt="">
     <div class="inner-container">
-        <h2 class="cloud">FAQ</h2>
+        <h2 class="custom-title">FAQ</h2>
+        <h3 class="subtitle">Frequently Asked Questions</h3>
         <mat-accordion>
           <mat-expansion-panel *ngFor="let faq of faqs">
             <mat-expansion-panel-header>
               <mat-panel-title>
+                <mat-icon>{{faq.icon}}</mat-icon>
                 {{faq.question}}
               </mat-panel-title>
             </mat-expansion-panel-header>
@@ -13,5 +14,4 @@
           </mat-expansion-panel>
         </mat-accordion>
     </div>
-    <img id="bottom-grass" src="../../../assets/images/grass.png" alt="">
 </div>
