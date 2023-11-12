@@ -13,7 +13,7 @@ export class FaqComponent {
       icon: 'contact_support',
     },
     {
-      question: 'What is the personalized message for?',
+      question: 'What is the note for?',
       answer: 'We\'ve included a personalized message/note in every order. This is to enable people to purchase the grass as a gift for a friend. Using the note you can personalize a message for them to read when they receive the grass. This personalized message is moderated and there\'s a 150 character limit. We moderate the message to avoid legal trouble, so as long as you\'re not threatening people or writing anything illegal, we\'ll write it for you.',
       icon: 'edit',
     },

@@ -72,7 +72,7 @@ a {
     animation-name: grass;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    transform: translate(-50px) rotate(90deg);
+    transform: translate(-50px) rotate(180deg);
 }
 .card {
     z-index: 4;
@@ -98,10 +98,10 @@ a {
 
 @keyframes grass {
     25% {
-        transform: translate(-50px) rotate(90deg);
+        transform: translate(-50px) rotate(180deg);
     }
     70% {
-        transform: translate(-525px) rotate(90deg);
+        transform: translate(-525px) rotate(180deg);
     }
     100% {
         transform: translate(-400px, 200px) rotate(165deg);
