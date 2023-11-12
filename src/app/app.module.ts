@@ -19,10 +19,10 @@ import {MatIconModule} from '@angular/material/icon';
   declarations: [
     AppComponent,
     FooterComponent,
-    HeroComponent,
     IncludedComponent,
     ReviewsComponent,
     FaqComponent,
+    HeroComponent,
   ],
   imports: [
     BrowserModule,
