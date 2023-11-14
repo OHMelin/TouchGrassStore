@@ -1,5 +1,6 @@
 .outer-container {
-    height: 100vh;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     background-image: url(../../../assets/images/sky.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,6 +39,7 @@ a {
 
 .stack {
     position: absolute;
+    display: block;
 }
 .letter-front {
     box-shadow: none;
@@ -66,68 +68,197 @@ a {
     }
 }
 .certificate {
+    display: block;
     z-index: 2;
     transform-origin: center center;
     rotate: 90deg;
+
+    -webkit-animation-name: certificate;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: certificate;
+    -moz-animation-duration: 2s;
+    -moz-animation-fill-mode: forwards;
+
+    -ms-animation-name: certificate;
+    -ms-animation-duration: 2s;
+    -ms-animation-fill-mode: forwards;
+
+    -o-animation-name: certificate;
+    -o-animation-duration: 2s;
+    -o-animation-fill-mode: forwards;
+
     animation-name: certificate;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+
     transform: translate(-50px);
     width: 330px;
     @media screen and (max-width: 450px) {
         width: 267px;
+        -webkit-animation-name: certificate_sm;
+        -moz-animation-name: certificate_sm;
+        -ms-animation-name: certificate_sm;
+        -o-animation-name: certificate_sm;
         animation-name: certificate_sm;
     }
 }
 .grass {
+    display: block;
     box-shadow: none;
     z-index: 3;
     transform-origin: center center;
     rotate: 90deg;
+
+    -webkit-animation-name: grass;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: grass;
+    -moz-animation-duration: 2s;
+    -moz-animation-fill-mode: forwards;
+
+    -ms-animation-name: grass;
+    -ms-animation-duration: 2s;
+    -ms-animation-fill-mode: forwards;
+
+    -o-animation-name: grass;
+    -o-animation-duration: 2s;
+    -o-animation-fill-mode: forwards;
+
     animation-name: grass;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+
     transform: translate(-50px) rotate(180deg);
     width: 195px;
     @media screen and (max-width: 450px) {
         width: 156px;
+        -webkit-animation-name: grass_sm;
+        -moz-animation-name: grass_sm;
+        -ms-animation-name: grass_sm;
+        -o-animation-name: grass_sm;
         animation-name: grass_sm;
     }
 }
 .card {
+    display: block;
     z-index: 4;
     transform-origin: center center;
+
+    -webkit-animation-name: card;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    
+    -moz-animation-name: card;
+    -moz-animation-duration: 2s;
+    -moz-animation-fill-mode: forwards;
+
+    -ms-animation-name: card;
+    -ms-animation-duration: 2s;
+    -ms-animation-fill-mode: forwards;
+
+    -o-animation-name: card;
+    -o-animation-duration: 2s;
+    -o-animation-fill-mode: forwards;
+
     animation-name: card;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+
     transform: translate(0, -50px);
     width: 70px;
     @media screen and (max-width: 450px) {
         width: 56px;
+        -webkit-animation-name: card_sm;
+        -moz-animation-name: card_sm;
+        -ms-animation-name: card_sm;
+        -o-animation-name: card_sm;
         animation-name: card_sm;
     }
 }
 
 @keyframes certificate {
     25% {
+        -webkit-transform: translate(-50px);
+        -moz-transform: translate(-50px);
+        -ms-transform: translate(-50px);
+        -o-transform: translate(-50px);
         transform: translate(-50px);
     }
     70% {
+        -webkit-transform: translate(-500px) rotate(-0deg);
+        -moz-transform: translate(-500px) rotate(-0deg);
+        -ms-transform: translate(-500px) rotate(-0deg);
+        -o-transform: translate(-500px) rotate(-0deg);
         transform: translate(-500px) rotate(-0deg);
     }
     100% {
+        -webkit-transform: translate(-450px) rotate(-90deg);
+        -moz-transform: translate(-450px) rotate(-90deg);
+        -ms-transform: translate(-450px) rotate(-90deg);
+        -o-transform: translate(-450px) rotate(-90deg);
+        transform: translate(-450px) rotate(-90deg);
+        box-shadow: 0 0 50px #00000025;
+    }
+}
+@-webkit-keyframes certificate {
+    25% {
+        -webkit-transform: translate(-50px);
+        -o-transform: translate(-50px);
+        transform: translate(-50px);
+    }
+    70% {
+        -webkit-transform: translate(-500px) rotate(-0deg);
+        -o-transform: translate(-500px) rotate(-0deg);
+        transform: translate(-500px) rotate(-0deg);
+    }
+    100% {
+        -webkit-transform: translate(-450px) rotate(-90deg);
+        -o-transform: translate(-450px) rotate(-90deg);
         transform: translate(-450px) rotate(-90deg);
         box-shadow: 0 0 50px #00000025;
     }
 }
 @keyframes certificate_sm {
     25% {
+        -webkit-transform: translate(-50px);
+        -moz-transform: translate(-50px);
+        -ms-transform: translate(-50px);
+        -o-transform: translate(-50px);
         transform: translate(-50px);
     }
     70% {
+        -webkit-transform: translate(-400px) rotate(-0deg);
+        -moz-transform: translate(-400px) rotate(-0deg);
+        -ms-transform: translate(-400px) rotate(-0deg);
+        -o-transform: translate(-400px) rotate(-0deg);
         transform: translate(-400px) rotate(-0deg);
     }
     100% {
+        -webkit-transform: translate(-350px) rotate(-90deg);
+        -moz-transform: translate(-350px) rotate(-90deg);
+        -ms-transform: translate(-350px) rotate(-90deg);
+        -o-transform: translate(-350px) rotate(-90deg);
+        transform: translate(-350px) rotate(-90deg);
+        box-shadow: 0 0 50px #00000025;
+    }
+}
+@-webkit-keyframes certificate_sm {
+    25% {
+        -webkit-transform: translate(-50px);
+        -o-transform: translate(-50px);
+        transform: translate(-50px);
+    }
+    70% {
+        -webkit-transform: translate(-400px) rotate(-0deg);
+        -o-transform: translate(-400px) rotate(-0deg);
+        transform: translate(-400px) rotate(-0deg);
+    }
+    100% {
+        -webkit-transform: translate(-350px) rotate(-90deg);
+        -o-transform: translate(-350px) rotate(-90deg);
         transform: translate(-350px) rotate(-90deg);
         box-shadow: 0 0 50px #00000025;
     }
@@ -135,47 +266,165 @@ a {
 
 @keyframes grass {
     25% {
+        -webkit-transform: translate(-50px) rotate(180deg);
+        -moz-transform: translate(-50px) rotate(180deg);
+        -ms-transform: translate(-50px) rotate(180deg);
+        -o-transform: translate(-50px) rotate(180deg);
         transform: translate(-50px) rotate(180deg);
     }
     70% {
+        -webkit-transform: translate(-525px) rotate(180deg);
+        -moz-transform: translate(-525px) rotate(180deg);
+        -ms-transform: translate(-525px) rotate(180deg);
+        -o-transform: translate(-525px) rotate(180deg);
         transform: translate(-525px) rotate(180deg);
     }
     100% {
+        -webkit-transform: translate(-400px, 200px) rotate(165deg);
+        -moz-transform: translate(-400px, 200px) rotate(165deg);
+        -ms-transform: translate(-400px, 200px) rotate(165deg);
+        -o-transform: translate(-400px, 200px) rotate(165deg);
+        transform: translate(-400px, 200px) rotate(165deg);
+    }
+}
+@-webkit-keyframes grass {
+    25% {
+        -webkit-transform: translate(-50px) rotate(180deg);
+        -o-transform: translate(-50px) rotate(180deg);
+        transform: translate(-50px) rotate(180deg);
+    }
+    70% {
+        -webkit-transform: translate(-525px) rotate(180deg);
+        -o-transform: translate(-525px) rotate(180deg);
+        transform: translate(-525px) rotate(180deg);
+    }
+    100% {
+        -webkit-transform: translate(-400px, 200px) rotate(165deg);
+        -o-transform: translate(-400px, 200px) rotate(165deg);
         transform: translate(-400px, 200px) rotate(165deg);
     }
 }
 @keyframes grass_sm {
     25% {
+        -webkit-transform: translate(-50px) rotate(180deg);
+        -moz-transform: translate(-50px) rotate(180deg);
+        -ms-transform: translate(-50px) rotate(180deg);
+        -o-transform: translate(-50px) rotate(180deg);
         transform: translate(-50px) rotate(180deg);
     }
     70% {
+        -webkit-transform: translate(-425px) rotate(180deg);
+        -moz-transform: translate(-425px) rotate(180deg);
+        -ms-transform: translate(-425px) rotate(180deg);
+        -o-transform: translate(-425px) rotate(180deg);
         transform: translate(-425px) rotate(180deg);
     }
     100% {
+        -webkit-transform: translate(-300px, 150px) rotate(165deg);
+        -moz-transform: translate(-300px, 150px) rotate(165deg);
+        -ms-transform: translate(-300px, 150px) rotate(165deg);
+        -o-transform: translate(-300px, 150px) rotate(165deg);
+        transform: translate(-300px, 150px) rotate(165deg);
+    }
+}
+@-webkit-keyframes grass_sm {
+    25% {
+        -webkit-transform: translate(-50px) rotate(180deg);
+        -o-transform: translate(-50px) rotate(180deg);
+        transform: translate(-50px) rotate(180deg);
+    }
+    70% {
+        -webkit-transform: translate(-425px) rotate(180deg);
+        -o-transform: translate(-425px) rotate(180deg);
+        transform: translate(-425px) rotate(180deg);
+    }
+    100% {
+        -webkit-transform: translate(-300px, 150px) rotate(165deg);
+        -o-transform: translate(-300px, 150px) rotate(165deg);
         transform: translate(-300px, 150px) rotate(165deg);
     }
 }
 
 @keyframes card {
     25% {
+        -webkit-transform: translate(0, -50px);
+        -moz-transform: translate(0, -50px);
+        -ms-transform: translate(0, -50px);
+        -o-transform: translate(0, -50px);
         transform: translate(0, -50px);
     }
     70% {
+        -webkit-transform: translate(0, -600px);
+        -moz-transform: translate(0, -600px);
+        -ms-transform: translate(0, -600px);
+        -o-transform: translate(0, -600px);
         transform: translate(0, -600px);
     }
     100% {
+        -webkit-transform: translate(210px, -500px) rotate(10deg);
+        -moz-transform: translate(210px, -500px) rotate(10deg);
+        -ms-transform: translate(210px, -500px) rotate(10deg);
+        -o-transform: translate(210px, -500px) rotate(10deg);
+        transform: translate(210px, -500px) rotate(10deg);
+        box-shadow: 0 0 50px #00000025;
+    }
+}
+@-webkit-keyframes card {
+    25% {
+        -webkit-transform: translate(0, -50px);
+        -o-transform: translate(0, -50px);
+        transform: translate(0, -50px);
+    }
+    70% {
+        -webkit-transform: translate(0, -600px);
+        -o-transform: translate(0, -600px);
+        transform: translate(0, -600px);
+    }
+    100% {
+        -webkit-transform: translate(210px, -500px) rotate(10deg);
+        -o-transform: translate(210px, -500px) rotate(10deg);
         transform: translate(210px, -500px) rotate(10deg);
         box-shadow: 0 0 50px #00000025;
     }
 }
 @keyframes card_sm {
     25% {
+        -webkit-transform: translate(0, -50px);
+        -moz-transform: translate(0, -50px);
+        -ms-transform: translate(0, -50px);
+        -o-transform: translate(0, -50px);
         transform: translate(0, -50px);
     }
     70% {
+        -webkit-transform: translate(0, -475px);
+        -moz-transform: translate(0, -475px);
+        -ms-transform: translate(0, -475px);
+        -o-transform: translate(0, -475px);
         transform: translate(0, -475px);
     }
     100% {
+        -webkit-transform: translate(170px, -400px) rotate(10deg);
+        -moz-transform: translate(170px, -400px) rotate(10deg);
+        -ms-transform: translate(170px, -400px) rotate(10deg);
+        -o-transform: translate(170px, -400px) rotate(10deg);
+        transform: translate(170px, -400px) rotate(10deg);
+        box-shadow: 0 0 50px #00000025;
+    }
+}
+@-webkit-keyframes card_sm {
+    25% {
+        -webkit-transform: translate(0, -50px);
+        -o-transform: translate(0, -50px);
+        transform: translate(0, -50px);
+    }
+    70% {
+        -webkit-transform: translate(0, -475px);
+        -o-transform: translate(0, -475px);
+        transform: translate(0, -475px);
+    }
+    100% {
+        -webkit-transform: translate(170px, -400px) rotate(10deg);
+        -o-transform: translate(170px, -400px) rotate(10deg);
         transform: translate(170px, -400px) rotate(10deg);
         box-shadow: 0 0 50px #00000025;
     }
