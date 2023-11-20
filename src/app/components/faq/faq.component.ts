@@ -18,7 +18,7 @@ export class FaqComponent {
       icon: 'edit',
     },
     {
-      question: 'Where can I shop to?',
+      question: 'Where can I ship to?',
       answer: 'Anywhere in the world! No matter if it\'s for yourself, a friend or another address! If you can\'t find the country you\'re looking for, when choosing shipping, try contacting us at touchgrassstore@gmail.com',
       icon: 'location_on',
     },
