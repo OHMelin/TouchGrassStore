@@ -41,6 +41,7 @@ a {
     position: absolute;
     display: block;
 }
+
 .letter-front {
     box-shadow: none;
     z-index: 6;
@@ -49,10 +50,6 @@ a {
     background-size: cover;
     width: 250px;
     height: 360px;
-    @media screen and (max-width: 450px) {
-        width: 200px;
-        height: 288px;
-    }
 }
 .letter {
     box-shadow: none;
@@ -62,10 +59,6 @@ a {
     background-size: cover;
     width: 250px;
     height: 360px;
-    @media screen and (max-width: 450px) {
-        width: 200px;
-        height: 288px;
-    }
 }
 .certificate {
     display: block;
@@ -95,14 +88,6 @@ a {
 
     transform: translate(-50px);
     width: 330px;
-    @media screen and (max-width: 450px) {
-        width: 267px;
-        -webkit-animation-name: certificate_sm;
-        -moz-animation-name: certificate_sm;
-        -ms-animation-name: certificate_sm;
-        -o-animation-name: certificate_sm;
-        animation-name: certificate_sm;
-    }
 }
 .grass {
     display: block;
@@ -133,14 +118,6 @@ a {
 
     transform: translate(-50px) rotate(180deg);
     width: 195px;
-    @media screen and (max-width: 450px) {
-        width: 156px;
-        -webkit-animation-name: grass_sm;
-        -moz-animation-name: grass_sm;
-        -ms-animation-name: grass_sm;
-        -o-animation-name: grass_sm;
-        animation-name: grass_sm;
-    }
 }
 .card {
     display: block;
@@ -169,13 +146,40 @@ a {
 
     transform: translate(0, -50px);
     width: 70px;
-    @media screen and (max-width: 450px) {
+}
+
+@media screen and (max-width: 450px) {
+    .letter-front {
+        width: 200px;
+        height: 288px;
+    }
+    .letter {
+        width: 200px;
+        height: 288px;
+    }
+    .certificate {
+        width: 267px;
+        //animation-name: certificate_sm;
+        //-webkit-animation-name: certificate_sm;
+        //-moz-animation-name: certificate_sm;
+        //-ms-animation-name: certificate_sm;
+        //-o-animation-name: certificate_sm;
+    }
+    .grass {
+        width: 156px;
+        //animation-name: grass_sm;
+        //-webkit-animation-name: grass_sm;
+        //-moz-animation-name: grass_sm;
+        //-ms-animation-name: grass_sm;
+        //-o-animation-name: grass_sm;
+    }
+    .card {
         width: 56px;
-        -webkit-animation-name: card_sm;
-        -moz-animation-name: card_sm;
-        -ms-animation-name: card_sm;
-        -o-animation-name: card_sm;
-        animation-name: card_sm;
+        //animation-name: card_sm;
+        //-webkit-animation-name: card_sm;
+        //-moz-animation-name: card_sm;
+        //-ms-animation-name: card_sm;
+        //-o-animation-name: card_sm;
     }
 }
 
