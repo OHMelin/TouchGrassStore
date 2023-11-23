@@ -19,12 +19,20 @@ export class CookieBannerComponent {
   }
 
   acceptCookies() {
-    this.cookieService.set('cookiesAccepted', 'true');
+    const expirationDate = new Date();
+    expirationDate.setDate(expirationDate.getDate() + 30);
+    this.cookieService.set('cookiesAccepted', 'true', {
+      expires: expirationDate,
+    });
     this.injectTracking();
   }
 
   denyCookies() {
-    this.cookieService.set('cookiesAccepted', 'false');
+    const expirationDate = new Date();
+    expirationDate.setDate(expirationDate.getDate() + 30);
+    this.cookieService.set('cookiesAccepted', 'false', {
+      expires: expirationDate,
+    });
   }
 
   private injectTracking() {
