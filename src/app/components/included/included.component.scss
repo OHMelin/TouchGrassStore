@@ -14,6 +14,9 @@
     flex-wrap: wrap;
     gap: 1rem;
 }
+.custom-title {
+    padding-top: 100px;
+}
 mat-card {
     flex: 1;
     width: 100%;
@@ -54,4 +57,17 @@ a {
     background-color: $custom-green !important;
     color: white !important;
     min-width: 150px;
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    div {
+        background-image: url('../../../assets/images/wave.svg');
+        background-size: auto;
+        background-repeat: repeat-x;
+        height: 100px;
+        opacity: 0.5;
+    }
 }
