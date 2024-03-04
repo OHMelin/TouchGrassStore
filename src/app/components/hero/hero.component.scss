@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 .outer-container {
     min-height: 100vh;
     min-height: -webkit-fill-available;
@@ -15,13 +17,57 @@
     bottom: 0;
 }
 
-a {
+.button-container {
     z-index: 6;
     bottom: 150px;
     position: absolute;
-    background-color: #45a545 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+a {
+    background-color: $custom-green !important;
     color: white !important;
     min-width: 150px;
+}
+.price {
+    margin-left: 1rem;
+    font-weight: bold;
+}
+.read-more-button {
+    background-color: $custom-blue !important;
+}
+.payment-types-container {
+    position: absolute;
+    bottom: 90px;
+    z-index: 10;
+    display: flex;
+    gap: 2rem;
+    img {
+        height: 45px;
+        box-shadow: 0 0 50px #00000025;
+        opacity: 0.5;
+    }
+    img:first-child {
+        transform-origin: center right;
+        rotate: -30deg;
+        transform: translatey(30px);
+    }
+    img:nth-child(2) {
+        transform-origin: center right;
+        rotate: -15deg;
+        
+    }
+    img:nth-child(4) {
+        transform-origin: center left;
+        rotate: 15deg;
+    }
+    img:nth-child(5) {
+        transform-origin: center left;
+        rotate: 30deg;
+        transform: translatey(30px);
+        
+    }
 }
 
 .stack-container {

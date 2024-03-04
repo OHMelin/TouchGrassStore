@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HeroComponent {
 
+  scrollToSection() {
+    const targetElement = document.getElementById('included');
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+    }
+  }
+
 }
