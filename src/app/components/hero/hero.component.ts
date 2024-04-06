@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import posthog from 'posthog-js'
 
 @Component({
   selector: 'app-hero',
@@ -6,7 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent {
-
   scrollToSection() {
     const targetElement = document.getElementById('included');
     if (targetElement) {
@@ -14,4 +14,19 @@ export class HeroComponent {
     }
   }
 
+  goToLink(url: string) {
+    window.open(url, "_self");
+  }
+
+  posthogReadMore() {
+    posthog.capture(
+      'Clicked read more', 
+    )
+  }
+
+  posthogBuy1() {
+    posthog.capture(
+      'Clicked buy 1', 
+    )
+  }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import posthog from 'posthog-js'
 
 @Component({
   selector: 'app-included',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./included.component.scss']
 })
 export class IncludedComponent {
-
+  posthogBuy2() {
+    posthog.capture(
+      'Clicked buy 2', 
+    )
+  }
 }

@@ -17,6 +17,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 
 import {CookieService} from 'ngx-cookie-service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import {CookieService} from 'ngx-cookie-service';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
+    HttpClientModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]

@@ -13,8 +13,8 @@
         <img class="stack grass" src="../../../assets/images/grass-patch.webp" alt="15x15cm grass patch">
         <img class="stack card" src="../../../assets/images/card.webp" alt="Note to recipient">
         <div class="button-container">
-            <a mat-raised-button href="https://buy.stripe.com/bIYbL3bCB1wi1tm3cc"><mat-icon>shopping_cart</mat-icon> Purchase<span class="price">$13.75</span></a>
-            <a mat-raised-button (click)="scrollToSection()" class="read-more-button"><mat-icon>keyboard_arrow_down</mat-icon> Read more</a>
+            <a mat-raised-button (click)="posthogBuy1(); goToLink('https://buy.stripe.com/bIYbL3bCB1wi1tm3cc')"><mat-icon>shopping_cart</mat-icon> Purchase<span class="price">$13.75</span></a>
+            <a mat-raised-button (click)="posthogReadMore(); scrollToSection()" class="read-more-button"><mat-icon>keyboard_arrow_down</mat-icon> Read more</a>
         </div>
     </div>
     <div id="grass" title="Credit: textures4photoshop"></div>
