@@ -1,8 +1,16 @@
 import { Component } from '@angular/core';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+
 import posthog from 'posthog-js'
 
 @Component({
   selector: 'app-hero',
+  standalone: true,
+  imports: [
+    MatButtonModule,
+    MatIconModule,
+  ],
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss']
 })

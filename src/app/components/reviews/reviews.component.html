@@ -3,20 +3,24 @@
         <h2 class="custom-title">REVIEWS</h2>
         <h3 class="subtitle">See Our Reviews</h3>
         <div class="card-container">
-            <mat-card *ngFor="let review of reviews">
-                <div id="background"></div>
-                <mat-card-header>
-                    <div mat-card-avatar class="header-image"></div>
-                    <mat-card-title>{{review.reviewer}}</mat-card-title>
-                    <mat-card-subtitle>
-                        <mat-icon *ngFor="let i of [1, 2, 3, 4, 5]">star</mat-icon>
-                    </mat-card-subtitle>
-                </mat-card-header>
-                <mat-card-content>
-                    <mat-card-title>{{review.title}}</mat-card-title>
-                    <mat-card-subtitle>{{review.review}}</mat-card-subtitle>
-                </mat-card-content>
-            </mat-card>
+            @for (review of reviews; track $index) {
+                <mat-card>
+                    <div id="background"></div>
+                    <mat-card-header>
+                        <div mat-card-avatar class="header-image"></div>
+                        <mat-card-title>{{review.reviewer}}</mat-card-title>
+                        <mat-card-subtitle>
+                            @for (i of [1, 2, 3, 4, 5]; track $index) {
+                                <mat-icon>star</mat-icon>
+                            }
+                        </mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <mat-card-title>{{review.title}}</mat-card-title>
+                        <mat-card-subtitle>{{review.review}}</mat-card-subtitle>
+                    </mat-card-content>
+                </mat-card>
+            }
         </div>
         <div class="button-container">
             <a mat-raised-button href="https://dk.trustpilot.com/review/touchgrass.store" target="_blank"><mat-icon>launch</mat-icon> See more</a>

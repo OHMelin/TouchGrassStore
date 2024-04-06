@@ -1,7 +1,16 @@
 import { Component } from '@angular/core';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'app-faq',
+  standalone: true,
+  imports: [
+    MatExpansionModule,
+    MatCardModule,
+    MatIconModule,
+  ],
   templateUrl: './faq.component.html',
   styleUrls: ['./faq.component.scss']
 })
