@@ -8,7 +8,6 @@ import { HeroComponent } from './components/hero/hero.component';
 import { IncludedComponent } from './components/included/included.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { FaqComponent } from './components/faq/faq.component';
-import { CookieBannerComponent } from './components/cookie-banner/cookie-banner.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatExpansionModule} from '@angular/material/expansion';
@@ -16,7 +15,6 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 
-import {CookieService} from 'ngx-cookie-service';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -27,7 +25,6 @@ import { HttpClientModule } from '@angular/common/http';
     ReviewsComponent,
     FaqComponent,
     HeroComponent,
-    CookieBannerComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,9 +34,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
   ],
-  providers: [CookieService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
