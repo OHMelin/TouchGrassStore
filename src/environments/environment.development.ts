@@ -1,7 +1,7 @@
-require('dotenv').config()
+import { secrets } from '../app/secrets'
 
 export const environment = {
     production: false,
-    POSTHOG_KEY:process.env.POSTHOG_KEY,
-    POSTHOG_HOST:'https://app.posthog.com',
+    POSTHOG_KEY: secrets.POSTHOG_KEY,
+    POSTHOG_HOST: 'https://app.posthog.com',
 };
