@@ -1,4 +1,4 @@
-import { secrets } from '../app/secrets'
+import { secrets } from '../secrets'
 
 export const environment = {
     production: true,
