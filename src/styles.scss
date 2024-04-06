@@ -44,7 +44,6 @@ body {
 html, body { height: 100%; }
 body { margin: 0; }
 
-
 .mat-expansion-panel-body {
     padding: 16px 24px 16px !important;
     p {
@@ -52,9 +51,8 @@ body { margin: 0; }
     }
 }
 .mat-expansion-indicator::after {
-    color: white;
+    color: white !important;
 }
 .mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
-    
     background-color: $custom-primary;
 }
