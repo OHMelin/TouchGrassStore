@@ -3,29 +3,33 @@
 .outer-container {
     flex-direction: column;
 }
-h2 {
-    text-align: center;
-}
+
 mat-icon {
     margin-right: 10px;
 }
+
 mat-expansion-panel {
     background-color: $custom-primary;
     color: white !important;
+
     .mat-expansion-panel-header-title {
         color: white;
         text-shadow: 0 0 5px black;
     }
 }
+
 .mat-expansion-panel:nth-child(2) {
     background-position-y: -100px;
 }
+
 .mat-expansion-panel:nth-child(3) {
     background-position-y: -200px;
 }
+
 .mat-expansion-panel:nth-child(4) {
     background-position-y: -300px;
 }
+
 .mat-expansion-panel {
     text-shadow: 0 0 5px black;
 }

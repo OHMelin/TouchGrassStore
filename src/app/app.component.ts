@@ -4,6 +4,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { IncludedComponent } from './components/included/included.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
+import { SendSuggestionComponent } from './components/send-suggestion/send-suggestion.component';
+import { StickyCtaComponent } from './components/sticky-cta/sticky-cta.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +16,8 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
     HeroComponent,
     IncludedComponent,
     ReviewsComponent,
+    SendSuggestionComponent,
+    StickyCtaComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

@@ -3,20 +3,24 @@
 .outer-container {
     flex-direction: column;
 }
+
 .button-container {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
     justify-content: center;
 }
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
+
 .custom-title {
     padding-top: 100px;
 }
+
 mat-card {
     flex: 1;
     width: 100%;
@@ -32,32 +36,39 @@ mat-card {
 
     background-color: $custom-primary;
     color: white;
+
     img {
         width: 100%;
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
     }
+
     mat-card-content {
         padding-top: 16px;
     }
+
     mat-card-subtitle {
         color: white;
         text-shadow: 0 0 5px black;
         text-wrap: pretty;
     }
+
     mat-card-title {
         font-weight: 600;
         text-shadow: 0 0 5px black;
     }
 }
+
 mat-card-header, mat-card-content, img {
     z-index: 1;
 }
+
 a {
     background-color: $custom-green !important;
     color: white !important;
     min-width: 150px;
 }
+
 .price {
     margin-left: 1rem;
     font-weight: bold;

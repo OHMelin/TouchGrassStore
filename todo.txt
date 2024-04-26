@@ -1,0 +1,12 @@
+- Make the payment options circle spin with more options
+- Add "free shipping" at each buy button
+- Make the "read more" button indicate clearer that you can scroll further down
+- Improve reviews
+    - Add pictures to the reviews
+    - Get more and better reviews
+- Improve footer
+    - Add repo
+    - Add socials (tiktok and more?)
+- Add "send suggestions" section under reviews
+    - With large call to action buy button
+    - With payment options displayed again
