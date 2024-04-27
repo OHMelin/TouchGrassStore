@@ -40,4 +40,10 @@ export class StickyCtaComponent {
       'Clicked toggle support'
     )
   }
+
+  posthogContact() {
+    posthog.capture(
+      'Clicked contact'
+    )
+  }
 }
