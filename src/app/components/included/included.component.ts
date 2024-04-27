@@ -17,9 +17,9 @@ import posthog from 'posthog-js'
   styleUrls: ['./included.component.scss']
 })
 export class IncludedComponent {
-  posthogBuy2() {
+  posthogBuyIncluded() {
     posthog.capture(
-      'Clicked buy 2', 
+      'Clicked buy "included"', 
     )
   }
 }

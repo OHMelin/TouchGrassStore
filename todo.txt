@@ -4,9 +4,6 @@
 - Improve reviews
     - Add pictures to the reviews
     - Get more and better reviews
-- Improve footer
-    - Add repo
-    - Add socials (tiktok and more?)
-- Add "send suggestions" section under reviews
+- Add "send to x" suggestions section under reviews
     - With large call to action buy button
     - With payment options displayed again

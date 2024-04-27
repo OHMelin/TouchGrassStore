@@ -15,9 +15,9 @@ import posthog from 'posthog-js'
   styleUrl: './send-suggestion.component.scss'
 })
 export class SendSuggestionComponent {
-  posthogBuy3() {
+  posthogBuySuggestion() {
     posthog.capture(
-      'Clicked buy 3', 
+      'Clicked buy "suggestion"', 
     )
   }
 

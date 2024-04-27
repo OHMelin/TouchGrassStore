@@ -1,6 +1,6 @@
 <div class="container">
     <!-- <button mat-raised-button><mat-icon>shopping_cart</mat-icon>Purchase now</button> -->
-    <button class="support" mat-fab (click)="toggleBlock()"><mat-icon>{{ isBlockVisible ? 'close' : 'question_answer'}}</mat-icon></button>
+    <button class="support" mat-fab (click)="posthogToggleSupport(); toggleBlock()"><mat-icon>{{ isBlockVisible ? 'close' : 'question_answer'}}</mat-icon></button>
     <button class="purchase" mat-fab (click)="posthogBuyCta(); goToLink('https://buy.stripe.com/bIYbL3bCB1wi1tm3cc')"><mat-icon>shopping_cart</mat-icon></button>
     @if (isBlockVisible) {
         <mat-card>

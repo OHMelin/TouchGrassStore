@@ -32,9 +32,9 @@ export class HeroComponent {
     )
   }
 
-  posthogBuy1() {
+  posthogBuyHero() {
     posthog.capture(
-      'Clicked buy 1', 
+      'Clicked buy "hero"', 
     )
   }
 }

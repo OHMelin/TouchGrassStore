@@ -31,7 +31,7 @@ export class StickyCtaComponent {
 
   posthogBuyCta() {
     posthog.capture(
-      'Clicked buy cta', 
+      'Clicked buy "cta"', 
     )
   }
 
