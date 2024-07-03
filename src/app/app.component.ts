@@ -6,11 +6,17 @@ import { IncludedComponent } from './components/included/included.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { SendSuggestionComponent } from './components/send-suggestion/send-suggestion.component';
 import { StickyCtaComponent } from './components/sticky-cta/sticky-cta.component';
+import { CommonModule } from '@angular/common';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
+    CommonModule,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
     FaqComponent,
     FooterComponent,
     HeroComponent,
