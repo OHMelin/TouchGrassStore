@@ -17,6 +17,11 @@ import {MatIconModule} from '@angular/material/icon';
 export class FaqComponent {
   faqs = [
     {
+      question: 'Is it anonymous?',
+      answer: 'Yes! Unless you write any identifying information in your custom message, then there\'s no way to identify you as the sender.',
+      icon: 'face',
+    },
+    {
       question: 'What does "touch grass" mean?',
       answer: 'Touch grass is used on the Internet to tell someone to go outside. The phrase also implies that the person the insult is directed to spends too much time online, and they physically need to get outside and “touch some grass” to reconnect with the real world.',
       icon: 'contact_support',
@@ -33,7 +38,7 @@ export class FaqComponent {
     },
     {
       question: 'Further questions?',
-      answer: 'Don\'t hesitate to contact us at touchgrassstore@gmail.com if you have any questions!',
+      answer: 'Don\'t hesitate to contact me at touchgrassstore@gmail.com if you have any questions!',
       icon: 'question_answer',
     },
   ]

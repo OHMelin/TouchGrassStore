@@ -1,5 +1,4 @@
 - Make the payment options circle spin with more options
-- Add "free shipping" at each buy button
 - Make the "read more" button indicate clearer that you can scroll further down
 - Improve reviews
     - Add pictures to the reviews
